@@ -10,4 +10,4 @@
   - name: generate inventory
     lineinfile:
       path: "{{ inv_files }}"
-      line: "{{ groups['labservers'] }}"
+      line: "{{ groups['labservers']|join(' ') }}"
