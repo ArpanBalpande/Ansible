@@ -1,0 +1,4 @@
+---
+# defaults value for apache
+
+apache_server_admin: admin@example.com
