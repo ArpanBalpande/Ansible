@@ -1,0 +1,8 @@
+---
+- host: localhost
+  vars_files:
+    - /home/user/Vault/secure
+  tasks:
+    - name: Output message
+      shell: echo {{ message }} > /home/user/Vault/deployed.txt
+      no_log: true
